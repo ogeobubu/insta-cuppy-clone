@@ -254,14 +254,8 @@ section .button-container {
 }
 
 /* FOOTER */
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
 
 footer .nav-container {
-  position: relative;
   display: flex;
   justify-content: space-between;
   background-color: #1c1e21;
