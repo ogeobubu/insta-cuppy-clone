@@ -9,11 +9,10 @@ body {
   line-height: 1.4;
   background-color: #1c1e21;
   color: #ffffff;
-  height: 100%;
 }
 
 .container {
-  max-width: 500px;
+  max-width: 31.25rem;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -34,7 +33,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 0.8rem 1.5rem;
 }
 
@@ -42,10 +40,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 45%;
 }
 
 .arrow {
-  padding-right: 3rem;
+  padding-right: 1rem;
 }
 
 .at-handle {
@@ -65,8 +64,7 @@ header h2 {
 
 .profile-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-area: auto;
+  grid-template-columns: repeat(2, 1fr);
   padding: 0 1rem;
   margin-top: 5rem;
 }
@@ -123,7 +121,7 @@ section .button-container {
 .button-section .contact-button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.9rem;
+  grid-gap: 1.2rem;
 }
 
 .button-section a {
@@ -157,12 +155,18 @@ section .button-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
-  overflow-x: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  width: 125%;
+}
+
+.slide-container::-webkit-scrollbar {
+  display: none;
 }
 
 .content {
   text-align: center;
-  width: 90px;
+  width: 5.625rem;
 }
 
 .content p {
@@ -173,7 +177,7 @@ section .button-container {
 }
 
 .slide-section img {
-  width: 100px;
+  width: 6.25rem;
   border-radius: 50%;
   padding: 0.1rem 1.01rem;
 }
@@ -190,10 +194,11 @@ section .button-container {
 /* NAVIGATION SECTION */
 .navigation {
   margin-top: 1rem;
+  width: 100%;
 }
 
 .nav-line {
-  max-width: 490px;
+  /* width: 120%; */
   margin: 0 auto;
   border-top: 1px #434343 solid;
   padding: 0.1rem;
@@ -203,6 +208,7 @@ section .button-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 125%;
 }
 
 .nav-container i {
@@ -246,7 +252,7 @@ section .button-container {
   display: inline-block;
   text-decoration: none;
   padding: 0.3rem 1rem;
-  border-radius: 15px;
+  border-radius: 1rem;
   background-color: #3897f0;
   color: #ffffff;
 
